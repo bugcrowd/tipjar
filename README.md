@@ -2,7 +2,7 @@
 
 ## More complex = Less Secure
 
-Credit: @Bugcrowd
+Credit: [Bugcrowd](https://twitter.com/bugcrowd)
 
 Source: https://twitter.com/Bugcrowd/status/1352126283505922049
 
