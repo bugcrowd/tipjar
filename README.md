@@ -30,8 +30,7 @@ grep -r "SELECT.*\\.\\ \\$" .
 
 It will still take some manual work, but this can be a good way to focus your attention on the most obvious weak points.
 
-To take this technique to the next level, checkout [gf](https://github.com/tomnomnom/gf) by 
-[tomnomnom](https://twitter.com/tomnomnom). 
+To take this technique to the next level, checkout gf by tomnomnom: https://github.com/tomnomnom/gf.
 
 For some more tasty regex ideas, checkout the [Trufflehog regexes](https://github.com/dxa4481/truffleHogRegexes/blob/master/truffleHogRegexes/regexes.json).
 ```
