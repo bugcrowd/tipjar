@@ -2,8 +2,6 @@
 
 ## More complex = Less Secure
 
-Credit: [Bugcrowd](https://twitter.com/bugcrowd)
-
 Source: https://twitter.com/Bugcrowd/status/1352126283505922049
 
 ```
@@ -13,9 +11,6 @@ More complex = less secure.
 ```
 
 ## Grep for Code Analysis
-
-
-Credit: [Bugcrowd](https://twitter.com/bugcrowd)
 
 Source: https://twitter.com/Bugcrowd/status/1349525327811231745
 
@@ -37,8 +32,6 @@ For some more tasty regex ideas, checkout the [Trufflehog regexes](https://githu
 
 ## Wordpress Plugins
 
-Credit [Bugcrowd](https://twitter.com/bugcrowd)
-
 Source: https://twitter.com/Bugcrowd/status/1347015120287916032
 
 ```
@@ -54,8 +47,6 @@ The most common bug you'll find with this method is XSS
 
 ## Common XXE Weakpoints
 
-Credit [Bugcrowd](https://twitter.com/bugcrowd) and [Mohammad Owais](https://twitter.com/_mohammadowais)
-
 Source: https://twitter.com/Bugcrowd/status/1342184648856616972
 
 ```
@@ -64,7 +55,7 @@ Here are places that you can look for them:
 
 1. Uploading Open XML documents such as MS Offics docs (docx, xlsx, pptx). They're all just zip files filled with XML files. If these documents get parsed on the server-side, there's a chance that they will also parse external entities within those files.
 
-2. 2. Functionality that parses RSS feeds (they're XML too!)
+2. Functionality that parses RSS feeds (they're XML too!)
 
 3. Functionality that parses HTML (for example, converting HTML to PDF)
 
@@ -78,9 +69,6 @@ Here are places that you can look for them:
 ```
 
 ## Escalating XSS
-
-
-Credit [Bugcrowd](https://twitter.com/bugcrowd)
 
 Source: https://twitter.com/Bugcrowd/status/1339417608169222145
 
