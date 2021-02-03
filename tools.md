@@ -2,7 +2,7 @@
 
 A curated list of tools (and tips on how to use them) that will level up your bounty game. For more, head [back to the main page](./README.md).
 
-# List
+# Tool List
 
 | Tool              | Description                                               | Location                                                                                         | Cost                                                       |
 | ----------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------- |
@@ -18,7 +18,7 @@ A curated list of tools (and tips on how to use them) that will level up your bo
 | Obsidian          | Markdown-based note taking tool with relationship support | [https://obsidian.md/](https://obsidian.md/)                                                     | Free and Open Source                                       |
 | Tomnomnom's tools | A great collection of simple CLI utilities                | [https://github.com/tomnomnom](https://github.com/tomnomnom)                                     | Free and Open Source                                       |
 
-# Tips
+# Tool-Related Tips
 
 ## Most Frequently Used Hacking Tools Twitter Thread
 
