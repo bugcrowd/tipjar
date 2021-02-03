@@ -4,6 +4,26 @@ A collection of one-off bug bounty wisdom nuggets to help you level up. 🚀
 
 ![header](bc-tipjar-min.png)
 
+## CSRF Techniques
+
+Source: https://twitter.com/hakluke/status/1350710129671344128
+
+```
+CSRF comes in many forms. Try:
+
+- Removing the token parameter entirely
+- Setting the token to a blank string
+- Changing the token to an invalid token of the same format
+- Using a different user's token
+- Put the parameters in the URL instead of POST body (and remove the token) and change the HTTP verb to GET
+- Testing every sensitive endpoint
+- Check whether the token might be guessed / cracked
+- Check whether new tokens are generated for every session, if not they may be a hash of something simple like the user's email address. If so you can craft your own valid tokens.
+- Try building the payload with multiple methods including a standard HTML form, multipart form, and XHR (Burp can help)
+
+Being thorough is the key - many devs are still implementing CSRF protections on a per-endpoint basis. When they do that, they're bound to forget somewhere!
+```
+
 ## More complex = Less Secure
 
 Source: https://twitter.com/Bugcrowd/status/1352126283505922049
