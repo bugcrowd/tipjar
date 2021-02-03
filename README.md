@@ -4,6 +4,12 @@ A collection of one-off bug bounty wisdom nuggets to help you level up. 🚀
 
 ![header](bc-tipjar-min.png)
 
+# How to Contribute 🙌
+
+Post your hacking tips on socials with the hashtag #bugcrowdtipjar and/or make a PR to this repository!
+
+# The Tips! 💡
+
 ## Common XXE Weakpoints
 
 Source: https://twitter.com/Bugcrowd/status/1342184648856616972
