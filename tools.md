@@ -2,7 +2,25 @@
 
 A curated list of tools (and tips on how to use them) that will level up your bounty game. For more, head [back to the main page](./README.md).
 
-## Most Frequently Used Hacking Tools
+# List
+
+| Tool              | Description                                               | Location                                                                                         | Cost                                                       |
+| ----------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------- |
+| Burp Suite        | Web proxy and web vulnerability scanner                   | [https://portswigger.net/burp/communitydownload](https://portswigger.net/burp/communitydownload) | Free community edition, paid pro edition has more features |
+| Ffuf              | Fast web fuzzer and directory brute-forcer                | [https://github.com/ffuf/ffuf](https://github.com/ffuf/ffuf)                                     | Free and Open Source                                       |
+| Hakrawler         | CLI based web crawler to exfiltrate accessible URLs       | [https://github.com/hakluke/hakrawler](https://github.com/hakluke/hakrawler)                     | Free and Open Source                                       |
+| Amass             | Subdomain enumeration, recon and tracking                 | [https://github.com/OWASP/Amass](https://github.com/OWASP/Amass)                                 | Free and Open Source                                       |
+| Subfinder         | Fast subdomain enumeration                                | [https://github.com/projectdiscovery/subfinder](https://github.com/projectdiscovery/subfinder)   | Free and Open Source                                       |
+| Nmap              | Extensible port scanner                                   | [https://nmap.org/](https://nmap.org/)                                                           | Free and Open Source                                       |
+| Nuclei            | Extensible web vulnerability scanner                      | [https://github.com/projectdiscovery/nuclei](https://github.com/projectdiscovery/nuclei)         | Free and Open Source                                       |
+| SQLMap            | Automated SQL injection detection and exploitation        | [http://sqlmap.org/](http://sqlmap.org/)                                                         | Free and Open Source                                       |
+| Interlace         | Multi-thread all the things                               | [https://github.com/codingo/Interlace](https://github.com/codingo/Interlace)                     | Free and Open Source                                       |
+| Obsidian          | Markdown-based note taking tool with relationship support | [https://obsidian.md/](https://obsidian.md/)                                                     | Free and Open Source                                       |
+| Tomnomnom's tools | A great collection of simple CLI utilities                | [https://github.com/tomnomnom](https://github.com/tomnomnom)                                     | Free and Open Source                                       |
+
+# Tips
+
+## Most Frequently Used Hacking Tools Twitter Thread
 
 Source: https://twitter.com/hakluke/status/1328656781195689984
 
