@@ -68,7 +68,7 @@ Contents:
 10. Just Start
 ```
 
-## More complex = Less Secure
+## More Complex = Less Secure
 
 Source: https://twitter.com/Bugcrowd/status/1352126283505922049
 
