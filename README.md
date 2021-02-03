@@ -1,6 +1,6 @@
 # Bugcrowd Tip Jar 💡
 
-A collection of one-off bug bounty wisdom nuggets to help you level up. 🚀
+A curated collection of one-off bug bounty wisdom nuggets to help you level up. 🚀
 
 ![header](bc-tipjar-min.png)
 
