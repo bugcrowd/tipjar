@@ -160,3 +160,13 @@ Found a Wordpress site? The easiest place to find bugs is in the plugins.
 
 The most common bug you'll find with this method is XSS
 ```
+
+## Finding the Correct Region for an S3 Bucket
+
+Sournce: https://twitter.com/hakluke/status/1350553428242493440
+
+```
+If you find a S3 subdomain takeover, you need to set up the S3 bucket in the correct region, otherwise it doesn't work.
+
+To find the region, use `dig` to get the IP address, then put the IP into https://isitonaws.com to grab the region easily.
+```
