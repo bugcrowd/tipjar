@@ -50,13 +50,11 @@ Part 3: Practical hacking tips and tricks https://medium.com/@hakluke/haklukes-u
 Assetnote dropped an incredible resource for chaining blind SSRF vulnerabilities, you can check it out here: https://blog.assetnote.io/2021/01/13/blind-ssrf-chains/
 ```
 
-## Finding the Correct Region for an S3 Bucket
+## Great Primer for finding XXE Bugs
 
-Sournce: https://twitter.com/hakluke/status/1350553428242493440
+Sournce: https://www.bugcrowd.com/blog/how-to-find-xxe-bugs/
 
 ```
-If you find a S3 subdomain takeover, you need to set up the S3 bucket in the correct region, otherwise it doesn't work.
-
-To find the region, use `dig` to get the IP address, then put the IP into https://isitonaws.com to grab the region easily.
+How to find XXE bugs: Severe, Missed and Misunderstood
 ```
 
