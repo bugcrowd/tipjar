@@ -52,9 +52,7 @@ Assetnote dropped an incredible resource for chaining blind SSRF vulnerabilities
 
 ## Great Primer for finding XXE Bugs
 
-Source: https://www.bugcrowd.com/blog/how-to-find-xxe-bugs/
-
 ```
-How to find XXE bugs: Severe, Missed and Misunderstood
+How to find XXE bugs: Severe, Missed and Misunderstood: https://www.bugcrowd.com/blog/how-to-find-xxe-bugs/
 ```
 
