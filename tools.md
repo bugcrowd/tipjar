@@ -17,6 +17,7 @@ A curated list of tools (and tips on how to use them) that will level up your bo
 | Interlace         | Multi-thread all the things                               | [https://github.com/codingo/Interlace](https://github.com/codingo/Interlace)                     | Free and Open Source                                       |
 | Obsidian          | Markdown-based note taking tool with relationship support | [https://obsidian.md/](https://obsidian.md/)                                                     | Free and Open Source                                       |
 | Tomnomnom's tools | A great collection of simple CLI utilities                | [https://github.com/tomnomnom](https://github.com/tomnomnom)                                     | Free and Open Source                                       |
+| Axiom | CLI tool for scaling out hacking efforts. | [https://github.com/pry0cc/axiom](https://github.com/pry0cc/axiom) | Free and Open Source |
 
 # Tool-Related Tips
 
