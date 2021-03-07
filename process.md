@@ -2,6 +2,16 @@
 
 A curated list of technical/process tips that will level up your bounty game. For more, head [back to the main page](./README.md).
 
+## Quick wordlist creation
+
+Source: https://twitter.com/Bugcrowd/status/1362627992036519940
+
+```
+A quick one-liner that will gather + crawl all subdomains, then convert to a custom wordlist unique to that organisation based on discovered URLs!
+
+subfinder -d bugcrowd[.]com -silent | httpx -silent | hakrawler -plain | tr "[:punct:]" "\n" | sort -u
+```
+
 ## Dumping URLs with regex
 
 Source: https://twitter.com/Bugcrowd/status/1364809861964451849
