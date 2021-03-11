@@ -17,7 +17,13 @@ A curated list of tools (and tips on how to use them) that will level up your bo
 | Interlace         | Multi-thread all the things                               | [https://github.com/codingo/Interlace](https://github.com/codingo/Interlace)                     | Free and Open Source                                       |
 | Obsidian          | Markdown-based note taking tool with relationship support | [https://obsidian.md/](https://obsidian.md/)                                                     | Free and Open Source                                       |
 | Tomnomnom's tools | A great collection of simple CLI utilities                | [https://github.com/tomnomnom](https://github.com/tomnomnom)                                     | Free and Open Source                                       |
-| Axiom | CLI tool for scaling out hacking efforts | [https://github.com/pry0cc/axiom](https://github.com/pry0cc/axiom) | Free and Open Source |
+| Axiom             | CLI tool for scaling out hacking efforts                  | [https://github.com/pry0cc/axiom](https://github.com/pry0cc/axiom)                                | Free and Open Source                                      |
+| Sudomy         | Fast subdomain enumeration                                   | [https://github.com/Screetsec/Sudomy](https://github.com/Screetsec/Sudomy)                        | Free and Open Source                                      |
+| Dirsearch         | Web path scanner                                          | [https://github.com/maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)                | Free and Open Source                                      |
+| Arjun             | HTTP parameter discovery suite                            | [https://github.com/s0md3v/Arjun](https://github.com/s0md3v/Arjun)                                | Free and Open Source                                      |
+| Dalfox            | Parameter Analysis and XSS Scanning tool                  | [https://github.com/hahwul/dalfox](https://github.com/hahwul/dalfox)                              | Free and Open Source                                      |
+| Httpx             | httpx is a fast and multi-purpose HTTP toolkit            | [https://github.com/projectdiscovery/httpx](https://github.com/projectdiscovery/httpx)            | Free and Open Source                                      |
+| Subzy             | Subdomain takeover vulnerability checker                  | [https://github.com/LukaSikic/subzy](https://github.com/LukaSikic/subzy)                          | Free and Open Source                                      |
 
 # Tool-Related Tips
 
