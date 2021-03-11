@@ -18,6 +18,8 @@ A curated list of tools (and tips on how to use them) that will level up your bo
 | Obsidian          | Markdown-based note taking tool with relationship support | [https://obsidian.md/](https://obsidian.md/)                                                     | Free and Open Source                                       |
 | Tomnomnom's tools | A great collection of simple CLI utilities                | [https://github.com/tomnomnom](https://github.com/tomnomnom)                                     | Free and Open Source                                       |
 | Axiom | CLI tool for scaling out hacking efforts | [https://github.com/pry0cc/axiom](https://github.com/pry0cc/axiom) | Free and Open Source |
+| Sudomy         | Fast subdomain enumeration                                   | [https://github.com/Screetsec/Sudomy](https://github.com/Screetsec/Sudomy)                        | Free and Open Source                                      |
+| Dirsearch         | Web path scanner                                   | [https://github.com/maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)                        | Free and Open Source                                      |
 
 # Tool-Related Tips
 
