@@ -152,6 +152,19 @@ You would be amazed at how many applications appear totally secure, and then the
 By the way - if you want to make this whole process 100x faster, check out the "Autorize" burp plugin. @Regala_ and @stokfredrik did a great video about it here: https://www.youtube.com/watch?v=3K1-a7dnA60&ab_channel=ST%C3%96K
 ```
 
+## Finding IDOR Bugs Using Burp Match & Replace
+
+```
+Looking for an IDOR vulnerability but there are just too many requests to test manually using BURP repeater? 
+
+An easier way to find them is to use BURP's match and replace settings. First find the ID of the object that you know your account can access, ID A, and the ID of some other object that you want to see if you can access, ID B.
+
+Navigate to Burp Proxy -> Settings -> Match & Replace.
+Add a new rule, with ID A going in the "match" box, and ID B in the "replace" box.
+
+Then simply browse the application as usual. If you start to see 200 response codes or data being populated that isn't your own, you may have found an IDOR bug!
+```
+
 ## Private Keys -> Private Repositories
 
 Source: https://twitter.com/hakluke/status/1350021538142015490
