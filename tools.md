@@ -24,6 +24,7 @@ A curated list of tools (and tips on how to use them) that will level up your bo
 | Dalfox            | Parameter Analysis and XSS Scanning tool                  | [https://github.com/hahwul/dalfox](https://github.com/hahwul/dalfox)                              | Free and Open Source                                      |
 | Httpx             | httpx is a fast and multi-purpose HTTP toolkit            | [https://github.com/projectdiscovery/httpx](https://github.com/projectdiscovery/httpx)            | Free and Open Source                                      |
 | Subzy             | Subdomain takeover vulnerability checker                  | [https://github.com/LukaSikic/subzy](https://github.com/LukaSikic/subzy)                          | Free and Open Source                                      |
+| reNgine           | Automated reconnaissance framework                        | [https://github.com/yogeshojha/rengine](https://github.com/yogeshojha/rengine)                    | Free and Open Source                                      |
 
 # Tool-Related Tips
 
