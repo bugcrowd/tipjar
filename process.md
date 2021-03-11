@@ -136,6 +136,18 @@ You can use this website to discover targets that use a particular Google Analyt
 https://dnslytics.com/reverse-analytics
 ```
 
+## Easy Recon for API with Mobile Apps
+
+Source: https://twitter.com/discodamone
+
+```
+1. Decompile apk with:
+jadx file.apk app/
+2. Find endpoints in strings.xml or with regex
+grep 'https\?://\|/api\|/v1'
+3. Often times mobile apps interact with the API in ways that are different from the web app, these ways are usually less secure because less eyes have looked at them
+```
+
 ## Finding Access Control Bugs
 
 Source: https://twitter.com/hakluke/status/1339209648813981696
