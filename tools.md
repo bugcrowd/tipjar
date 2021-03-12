@@ -23,7 +23,8 @@ A curated list of tools (and tips on how to use them) that will level up your bo
 | Arjun             | HTTP parameter discovery suite                            | [https://github.com/s0md3v/Arjun](https://github.com/s0md3v/Arjun)                                | Free and Open Source                                      |
 | Dalfox            | Parameter Analysis and XSS Scanning tool                  | [https://github.com/hahwul/dalfox](https://github.com/hahwul/dalfox)                              | Free and Open Source                                      |
 | Httpx             | httpx is a fast and multi-purpose HTTP toolkit            | [https://github.com/projectdiscovery/httpx](https://github.com/projectdiscovery/httpx)            | Free and Open Source                                      |
-| Subzy             | Subdomain takeover vulnerability checker                  | [https://github.com/LukaSikic/subzy](https://github.com/LukaSikic/subzy)                          | Free and Open Source                                      |
+| Subzy             | Subdomain takeover vulnerability checker                  | [https://github.com/LukaSikic/subzy](https://github.com/LukaSikic/subzy)                          | Free and Open Source 
+| Github Dorks             | Github recon for sensitive data                  | [https://github.com/techgaun/github-dorks](https://github.com/techgaun/github-dorks)                          | Free and Open Source                                      |
 
 # Tool-Related Tips
 
