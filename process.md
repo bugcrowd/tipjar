@@ -224,10 +224,44 @@ The most common bug you'll find with this method is XSS
 
 ## Finding the Correct Region for an S3 Bucket
 
-Sournce: https://twitter.com/hakluke/status/1350553428242493440
+Source: https://twitter.com/hakluke/status/1350553428242493440
 
 ```
 If you find a S3 subdomain takeover, you need to set up the S3 bucket in the correct region, otherwise it doesn't work.
 
 To find the region, use `dig` to get the IP address, then put the IP into https://isitonaws.com to grab the region easily.
+```
+
+## Find Special Access to certain API endpoints or temporary credentials
+
+Source: https://twitter.com/EdOverflow/status/986316960303591424
+
+```
+Look for hackathon-related assets. Companies sometimes run hackathons and give attendees special access to certain API endpoints or temporary credentials. You could find GIT repositories that were set up for hackathons full of sensitive information.
+```
+
+## Stay Updated to New Features
+
+Source: https://twitter.com/soaj1664ashar/status/1085118841359872000
+
+```
+Follow the marketing guys (e.g., Director or Manager) of the product you're targeting for #BugBounty. These guys are awesome in telling you all the new features that are in pipeline or just released. You will be the first to get your hands dirty.
+```
+
+## SQL Wildcards
+
+Source: https://twitter.com/gwendallecoguic/status/1076081365777551364
+
+```
+Did you know that the character '_' acts like the regex character '.' in SQL queries. https://www.w3resource.com/sql/wildcards-like-operator/wildcards-underscore.php
+
+Can be used to login to random account: https://twitter.com/gwendallecoguic/status/1076083109714710528
+```
+
+## Quick Privilege Escalation Technique
+
+Source: https://twitter.com/uraniumhacker/status/1066483686655221761
+
+```
+If a website does not verify email, try signing up with @domain.com (the company email). Sometimes this gives you higher privilege like deleting/viewing any other user's profiles etc.
 ```
