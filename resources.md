@@ -55,4 +55,8 @@ Assetnote dropped an incredible resource for chaining blind SSRF vulnerabilities
 ```
 How to find XXE bugs: Severe, Missed and Misunderstood: https://www.bugcrowd.com/blog/how-to-find-xxe-bugs/
 ```
+## John Hacking's OSCP Preperation Guide
+https://johnjhacking.com/blog/the-oscp-preperation-guide-2020/
 
+## SQL Injection Guide by Rana Khalil
+https://www.youtube.com/watch?v=1nJgupaUPEQ
