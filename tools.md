@@ -24,7 +24,7 @@ A curated list of tools (and tips on how to use them) that will level up your bo
 | Dalfox            | Parameter Analysis and XSS Scanning tool                  | [https://github.com/hahwul/dalfox](https://github.com/hahwul/dalfox)                              | Free and Open Source                                      |
 | Httpx             | httpx is a fast and multi-purpose HTTP toolkit            | [https://github.com/projectdiscovery/httpx](https://github.com/projectdiscovery/httpx)            | Free and Open Source                                      |
 | Subzy             | Subdomain takeover vulnerability checker                  | [https://github.com/LukaSikic/subzy](https://github.com/LukaSikic/subzy)                          | Free and Open Source                                      |
-
+| Name-That-Hash | Name That Hash will name that hash type!  Identify MD5, SHA256 and 3000+ other hashes | [https://github.com/HashPals/Name-That-Hash](https://github.com/HashPals/Name-That-Hash) | Free and Open Source
 # Tool-Related Tips
 
 ## Most Frequently Used Hacking Tools Twitter Thread
@@ -80,3 +80,24 @@ Source: https://twitter.com/sw33tLie/status/1334936005057654784
 ```
 Check out "bbscope" by sw33tlie: https://github.com/sw33tLie/bbscope
 ```
+## Vim Tricks
+source: https://www.youtube.com/watch?v=l8iXMgk2nnY (nom nom!)
+```
+:%!sort -u (% means current file, ! to run shell command)
+you can run shell commands right inside vim.
+
+xargs takes multiple lines of input and runs a command on every line of it.
+
+`%!xargs -n1 -I{} sh -c 'echo {} | base64 -d' (n1 -> give 1 input at a time, -I{} is a placeholder of input, sh -c -> to pass the command to shell )
+Search and replace
+:%s/\<search_item>/\<replace>
+
+:%s/// (// -> it search for whatever you last searched for)
+
+you can use unfurl tool by @tomnomnom to do some cool stuff
+:%!unfurl -u paths (this will find unique paths from the urls in the vim buffer)
+:%!unfurl -u keys (to get query strings)
+
+```
+vim is very powerfull you can use `vimtutor` & go through it to learn vim.
+I also recommend reading [Mastering Vim Quickly: From WTF to OMG in no time. Book](https://jovicailic.org/mastering-vim-quickly/)
