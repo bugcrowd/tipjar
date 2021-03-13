@@ -80,6 +80,21 @@ Source: https://twitter.com/sw33tLie/status/1334936005057654784
 ```
 Check out "bbscope" by sw33tlie: https://github.com/sw33tLie/bbscope
 ```
+## html-tool from tomnomnom
+find . -type f | html-tool attribs src (this will give all of the src attributes from all of the files)
+ find . -type f | html-tool tags title | vim - ( give the title tag from all of the files)
+## Random shell tricks
+Takes all the files cats them & use tok to make wordlists | vim
+find . -type f -exec cat {} \; | tok 
+
+Add http:// 
+sed -E 's/^/http:\/\//g' domains.txt &> hosts
+
+greps for '200 ok ' & sorts them numerically by size 
+
+grep -lri '200 ok ' | grep -v ^index | xargs -n1 ls -la | sort -k5,5 -n
+
+
 ## Vim Tricks
 source: https://www.youtube.com/watch?v=l8iXMgk2nnY (nom nom!)
 ```
