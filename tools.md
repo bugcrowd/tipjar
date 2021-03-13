@@ -89,7 +89,12 @@ Check out "bbscope" by sw33tlie: https://github.com/sw33tLie/bbscope
 ## html-tool from tomnomnom
 find . -type f | html-tool attribs src (this will give all of the src attributes from all of the files)
  find . -type f | html-tool tags title | vim - ( give the title tag from all of the files)
+ 
+## Interlace 
+Article by @hakluke
+[Interlace](https://medium.com/@hakluke/interlace-a-productivity-tool-for-pentesters-and-bug-hunters-automate-and-multithread-your-d18c81371d3d)
 ## Random shell tricks
+```
 Takes all the files cats them & use tok to make wordlists | vim
 find . -type f -exec cat {} \; | tok 
 
@@ -99,10 +104,26 @@ sed -E 's/^/http:\/\//g' domains.txt &> hosts
 greps for '200 ok ' & sorts them numerically by size 
 
 grep -lri '200 ok ' | grep -v ^index | xargs -n1 ls -la | sort -k5,5 -n
-
+usefull
 To check for subdomain takeover
 
  cat domains | while read domain; do host -t CNAME $domain; done | grep -i azure  (you can grep for anything that hosts check https://github.com/EdOverflow/can-i-take-over-xyz )
+ 
+ Inscope:  tool for filtering URLs and domains supplied on stdin to make sure they meet one of a set of regular expressions. 
+ It's in tomnomnom's hacks repo
+ The tool reads regexes from a file called .scope in the current working directory. If it doen't find one it recursively checks the parent directory until it hits the root.
+
+Here's an example .scope file:
+
+.*\.example\.com$
+^example\.com$
+.*\.example\.net$
+!.*outofscope\.example\.net$
+
+read more https://github.com/tomnomnom/hacks/tree/master/inscope
+ 
+ 
+ ```
 
 
 
