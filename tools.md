@@ -94,6 +94,12 @@ greps for '200 ok ' & sorts them numerically by size
 
 grep -lri '200 ok ' | grep -v ^index | xargs -n1 ls -la | sort -k5,5 -n
 
+To check for subdomain takeover
+
+ cat domains | while read domain; do host -t CNAME $domain; done | grep -i azure  (you can grep for anything that hosts check https://github.com/EdOverflow/can-i-take-over-xyz )
+
+
+
 
 ## Vim Tricks
 source: https://www.youtube.com/watch?v=l8iXMgk2nnY (nom nom!)
