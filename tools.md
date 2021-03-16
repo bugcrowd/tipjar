@@ -96,6 +96,10 @@ find . -type f | html-tool attribs src (this will give all of the src attributes
 ## Interlace 
 Article by @hakluke
 [Interlace](https://medium.com/@hakluke/interlace-a-productivity-tool-for-pentesters-and-bug-hunters-automate-and-multithread-your-d18c81371d3d)
+
+## ffuf tutorial by Daniel Miessler
+[danielmiessler.com](https://danielmiessler.com/study/ffuf)
+
 ## Random shell tricks
 ```
 Takes all the files cats them & use tok to make wordlists | vim
