@@ -11,6 +11,11 @@ A quick one-liner that will gather + crawl all subdomains, then convert to a cus
 
 subfinder -d bugcrowd[.]com -silent | httpx -silent | hakrawler -plain | tr "[:punct:]" "\n" | sort -u
 ```
+You can also do that using [tok](https://github.com/tomnomnom/hacks/tok)
+
+```
+subfinder -d bugcrowd[.]com -silent | httpx -silent | hakrawler -plain | tok | sort -u
+```
 
 ## Dumping URLs with regex
 
