@@ -24,8 +24,13 @@ A curated list of tools (and tips on how to use them) that will level up your bo
 | Dalfox            | Parameter Analysis and XSS Scanning tool                  | [https://github.com/hahwul/dalfox](https://github.com/hahwul/dalfox)                              | Free and Open Source                                      |
 | Httpx             | httpx is a fast and multi-purpose HTTP toolkit            | [https://github.com/projectdiscovery/httpx](https://github.com/projectdiscovery/httpx)            | Free and Open Source                                      |
 | Subzy             | Subdomain takeover vulnerability checker                  | [https://github.com/LukaSikic/subzy](https://github.com/LukaSikic/subzy)                          | Free and Open Source                                      |
-| LinkFinder             | Endpoint finder from JS Files                  | [https://github.com/GerbenJavado/LinkFinder](https://github.com/GerbenJavado/LinkFinder)                          | Free and Open Source 
-| Broken Link Checker             | Broken Link Finder                  | [https://github.com/stevenvachon/broken-link-checker/](https://github.com/stevenvachon/broken-link-checker/)                          | Free and Open Source
+| Name-That-Hash | Name That Hash will name that hash type!  Identify MD5, SHA256 and 3000+ other hashes | [https://github.com/HashPals/Name-That-Hash](https://github.com/HashPals/Name-That-Hash) | Free and Open Source|
+| Aquatone | A Tool for Domain Flyovers (webscreenshots) | [https://github.com/michenriksen/aquatone](https://github.com/michenriksen/aquatone) | Free and Open Source|
+| gau | Fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl. | [https://github.com/lc/gau](https://github.com/lc/gau) | Free and Open Source|
+| Wappalyzer } Identify technology on websites. (Browser Extension) | [https://github.com/AliasIO/wappalyzer](https://github.com/AliasIO/wappalyzer) | Free and Open Source|
+| PwnFOx | PwnFox is a Firefox/Burp extension that provide usefull tools for your security audit. (colorized output by the color of firefox container) | [https://github.com/B-i-t-K/PwnFox](https://github.com/B-i-t-K/PwnFox) | Free and Open Source|
+| LinkFinder             | Endpoint finder from JS Files                  | [https://github.com/GerbenJavado/LinkFinder](https://github.com/GerbenJavado/LinkFinder)                          | Free and Open Source |
+| Broken Link Checker             | Broken Link Finder                  | [https://github.com/stevenvachon/broken-link-checker/](https://github.com/stevenvachon/broken-link-checker/)                          | Free and Open Source|
 
 # Tool-Related Tips
 
@@ -82,3 +87,66 @@ Source: https://twitter.com/sw33tLie/status/1334936005057654784
 ```
 Check out "bbscope" by sw33tlie: https://github.com/sw33tLie/bbscope
 ```
+## html-tool from tomnomnom
+find . -type f | html-tool attribs src (this will give all of the src attributes from all of the files)
+ find . -type f | html-tool tags title | vim - ( give the title tag from all of the files)
+ 
+## Interlace 
+Article by @hakluke
+[Interlace](https://medium.com/@hakluke/interlace-a-productivity-tool-for-pentesters-and-bug-hunters-automate-and-multithread-your-d18c81371d3d)
+## Random shell tricks
+```
+Takes all the files cats them & use tok to make wordlists | vim
+find . -type f -exec cat {} \; | tok 
+
+Add http:// 
+sed -E 's/^/http:\/\//g' domains.txt &> hosts
+
+greps for '200 ok ' & sorts them numerically by size 
+
+grep -lri '200 ok ' | grep -v ^index | xargs -n1 ls -la | sort -k5,5 -n
+usefull
+To check for subdomain takeover
+
+ cat domains | while read domain; do host -t CNAME $domain; done | grep -i azure  (you can grep for anything that hosts check https://github.com/EdOverflow/can-i-take-over-xyz )
+ 
+ Inscope:  tool for filtering URLs and domains supplied on stdin to make sure they meet one of a set of regular expressions. 
+ It's in tomnomnom's hacks repo
+ The tool reads regexes from a file called .scope in the current working directory. If it doen't find one it recursively checks the parent directory until it hits the root.
+
+Here's an example .scope file:
+
+.*\.example\.com$
+^example\.com$
+.*\.example\.net$
+!.*outofscope\.example\.net$
+
+read more https://github.com/tomnomnom/hacks/tree/master/inscope
+ 
+ 
+ ```
+
+
+
+
+## Vim Tricks
+source: https://www.youtube.com/watch?v=l8iXMgk2nnY (nom nom!)
+```
+:%!sort -u (% means current file, ! to run shell command)
+you can run shell commands right inside vim.
+
+xargs takes multiple lines of input and runs a command on every line of it.
+
+`%!xargs -n1 -I{} sh -c 'echo {} | base64 -d' (n1 -> give 1 input at a time, -I{} is a placeholder of input, sh -c -> to pass the command to shell )
+Search and replace
+:%s/\<search_item>/\<replace>
+
+:%s/// (// -> it search for whatever you last searched for)
+
+you can use unfurl tool by @tomnomnom to do some cool stuff
+:%!unfurl -u paths (this will find unique paths from the urls in the vim buffer)
+:%!unfurl -u keys (to get query strings)
+
+```
+vim is very powerfull you can use `vimtutor` & go through it to learn vim.
+I also recommend reading [Mastering Vim Quickly: From WTF to OMG in no time. Book](https://jovicailic.org/mastering-vim-quickly/)
