@@ -97,8 +97,11 @@ find . -type f | html-tool attribs src (this will give all of the src attributes
 Article by @hakluke
 [Interlace](https://medium.com/@hakluke/interlace-a-productivity-tool-for-pentesters-and-bug-hunters-automate-and-multithread-your-d18c81371d3d)
 
-## ffuf tutorial by Daniel Miessler
-[danielmiessler.com](https://danielmiessler.com/study/ffuf)
+## ffuf tutorial
+[FFUF Primer](https://danielmiessler.com/study/ffuf)
+
+you can also watch video made by [InsiderPhD](https://www.youtube.com/watch?v=aN3Nayvd7FU)
+& blog post by [codingo](http://codingo.io/tools/ffuf/bounty/2020/09/17/everything-you-need-to-know-about-ffuf.html)
 
 ## Random shell tricks
 ```
