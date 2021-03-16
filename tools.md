@@ -150,5 +150,62 @@ you can use unfurl tool by @tomnomnom to do some cool stuff
 :%!unfurl -u keys (to get query strings)
 
 ```
+
+### Vim 'Magic Wands' -- an extension of the above
+source: https://rwx.gg/tools/editors/vi/how/magic/
+
+- You can *pass lines instantly into shell commands* in vi(m) without using `:...`!
+
+The most powerful in my opinion is the `!!` (**Line Wand**):
+- This will take the current line as input for the command you specify
+
+Before:
+```
+curl -s https://www.google.com/.well-known/security.txt
+```
+- When you are on the line you want to execute (in **normal mode**) hit `!!sh` to pass only the current line to sh and run it.
+
+After:
+```
+Contact: https://g.co/vulnz
+Contact: mailto:security@google.com
+Encryption: https://services.google.com/corporate/publickey.txt
+...
+```
+
+You will get the whole output of your command *instantly into vim*. (You can skip the copy-pasting from other console part with this little trick :))
+
+Note that this also works with other programs like `python` or `bc`.
+```
+Before:
+1289+586*4-5*84/2
+
+!!bc
+
+After:
+3423
+```
+
+Here's an other wand called **Section Wand**:
+- You can *pass multiple lines of code* to a program in vim by specifying an x amount of line. (This can be done with movement keys like `j`, `3j` or `}`).
+
+You start with an `!` and then you give vim the movement.
+```
+Before:
+red
+green
+yellow
+red
+blue
+
+!}sort -u
+
+After:
+blue
+green
+red
+yellow
+```
+
 vim is very powerfull you can use `vimtutor` & go through it to learn vim.
 I also recommend reading [Mastering Vim Quickly: From WTF to OMG in no time. Book](https://jovicailic.org/mastering-vim-quickly/)
