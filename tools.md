@@ -23,7 +23,8 @@ A curated list of tools (and tips on how to use them) that will level up your bo
 | Arjun             | HTTP parameter discovery suite                            | [https://github.com/s0md3v/Arjun](https://github.com/s0md3v/Arjun)                                | Free and Open Source                                      |
 | Dalfox            | Parameter Analysis and XSS Scanning tool                  | [https://github.com/hahwul/dalfox](https://github.com/hahwul/dalfox)                              | Free and Open Source                                      |
 | Httpx             | httpx is a fast and multi-purpose HTTP toolkit            | [https://github.com/projectdiscovery/httpx](https://github.com/projectdiscovery/httpx)            | Free and Open Source                                      |
-| Subzy             | Subdomain takeover vulnerability checker                  | [https://github.com/LukaSikic/subzy](https://github.com/LukaSikic/subzy)                          | Free and Open Source                                      |
+| Subzy             | Subdomain takeover vulnerability checker                  | [https://github.com/LukaSikic/subzy](https://github.com/LukaSikic/subzy)                          | Free and Open Source 
+| Github Dorks             | Github recon for sensitive data                  | [https://github.com/techgaun/github-dorks](https://github.com/techgaun/github-dorks)                          | Free and Open Source                                      |
 | Name-That-Hash | Name That Hash will name that hash type!  Identify MD5, SHA256 and 3000+ other hashes | [https://github.com/HashPals/Name-That-Hash](https://github.com/HashPals/Name-That-Hash) | Free and Open Source|
 | Aquatone | A Tool for Domain Flyovers (webscreenshots) | [https://github.com/michenriksen/aquatone](https://github.com/michenriksen/aquatone) | Free and Open Source|
 | gau | Fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl. | [https://github.com/lc/gau](https://github.com/lc/gau) | Free and Open Source|
@@ -31,6 +32,7 @@ A curated list of tools (and tips on how to use them) that will level up your bo
 | PwnFOx | PwnFox is a Firefox/Burp extension that provide usefull tools for your security audit. (colorized output by the color of firefox container) | [https://github.com/B-i-t-K/PwnFox](https://github.com/B-i-t-K/PwnFox) | Free and Open Source|
 | LinkFinder             | Endpoint finder from JS Files                  | [https://github.com/GerbenJavado/LinkFinder](https://github.com/GerbenJavado/LinkFinder)                          | Free and Open Source |
 | Broken Link Checker             | Broken Link Finder                  | [https://github.com/stevenvachon/broken-link-checker/](https://github.com/stevenvachon/broken-link-checker/)                          | Free and Open Source|
+
 
 # Tool-Related Tips
 
