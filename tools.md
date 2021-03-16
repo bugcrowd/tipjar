@@ -28,8 +28,8 @@ A curated list of tools (and tips on how to use them) that will level up your bo
 | Name-That-Hash | Name That Hash will name that hash type!  Identify MD5, SHA256 and 3000+ other hashes | [https://github.com/HashPals/Name-That-Hash](https://github.com/HashPals/Name-That-Hash) | Free and Open Source|
 | Aquatone | A Tool for Domain Flyovers (webscreenshots) | [https://github.com/michenriksen/aquatone](https://github.com/michenriksen/aquatone) | Free and Open Source|
 | gau | Fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl. | [https://github.com/lc/gau](https://github.com/lc/gau) | Free and Open Source|
-| Wappalyzer } Identify technology on websites. (Browser Extension) | [https://github.com/AliasIO/wappalyzer](https://github.com/AliasIO/wappalyzer) | Free and Open Source|
-| PwnFOx | PwnFox is a Firefox/Burp extension that provide usefull tools for your security audit. (colorized output by the color of firefox container) | [https://github.com/B-i-t-K/PwnFox](https://github.com/B-i-t-K/PwnFox) | Free and Open Source|
+| Wappalyzer | Identify technology on websites. (Browser Extension) | [https://github.com/AliasIO/wappalyzer](https://github.com/AliasIO/wappalyzer) | Free and Open Source|
+| PwnFox | PwnFox is a Firefox/Burp extension that provide usefull tools for your security audit. (colorized output by the color of firefox container) | [https://github.com/B-i-t-K/PwnFox](https://github.com/B-i-t-K/PwnFox) | Free and Open Source|
 | LinkFinder             | Endpoint finder from JS Files                  | [https://github.com/GerbenJavado/LinkFinder](https://github.com/GerbenJavado/LinkFinder)                          | Free and Open Source |
 | Broken Link Checker             | Broken Link Finder                  | [https://github.com/stevenvachon/broken-link-checker/](https://github.com/stevenvachon/broken-link-checker/)                          | Free and Open Source|
 
