@@ -265,3 +265,67 @@ Source: https://twitter.com/uraniumhacker/status/1066483686655221761
 ```
 If a website does not verify email, try signing up with @domain.com (the company email). Sometimes this gives you higher privilege like deleting/viewing any other user's profiles etc.
 ```
+
+## OTP/2FA Authentication bypasses
+
+Source: https://twitter.com/HackerHumble/status/1274259490322313219
+
+```
+1. Site is using Google Authenticator for 2A.
+2. There is an endpoint which will give you the QR Code / auth code to add into your Google Authenticator app.
+3.  Once the setup is done user can perform 2FA with Google app and login frok the next time.
+4. Now logged in with password and  made a request to the endpoint which gives the QR code/ auth code.
+5. Endpoint gave the new code.
+6. Attacker could add this code into Google Authenticator and can takeover the account by knowing the victims password. 
+```
+
+Source: https://twitter.com/HackerHumble/status/1250285312481189897
+
+```
+1. Web app is sending a verification code to email before changing some sensitive fields.
+2. Intercepted the request in burp and found the email parameter (eg: email: victim@gmail.com) in the POST request.
+3.Changed the email to another gmail (eg: attacker@gmail.com)
+4. Boom! Got the verification code at attacker@gmail.com.
+```
+
+Source: https://twitter.com/HackerHumble/status/1249171674773291013
+
+```
+1. Web app sending OTP before allowing sensitive action.
+2. Entered incorrect OTP 10 times - No rate limiting present.
+3. Sent the request to Burp Turbo Intruder to send requests with OTP from 0000 - 9999. 
+4. Boom! Got the correct OTP in less than 20 seconds.
+5. Bug looks very silly and most of you would have seen this already. But still there are applications without rate limiting
+```
+
+Source: https://twitter.com/HackerHumble/status/1248457678826819585
+
+```
+1. An android application using OTP to secure a resource.
+2. Entered correct OTP. Intercepted the request in burp and observered that OTP is sent to server.
+3. Response is 200 OK and navigated to secured page.
+4. Tried again, by entering the incorrect OTP and intercepted the response.
+5. Response is 401 (Unauthorised), changed it to 200 OK and the response as like in the success request.
+6. Boom! Navigated to the secured page
+```
+
+Source: https://twitter.com/HackerHumble/status/1248084337506967552
+
+```
+1. Webapp is taking the user to /homepage after doing 2FA (Passowrd and OTP)
+2. But found that it is setting the session after the username/password validation.
+3. After entering username and password it showed me the enter OTP page.
+4. 4. I changed the URL to go to /homepage.
+5. Boom! Logged in without OTP verification.
+```
+
+Source: https://twitter.com/HackerHumble/status/1247701495211913216
+
+```
+1. A Govt. Webapp using OTP for 2FA.
+2. Entered OTP and checked how it's sent to server.
+3. No request is sent to server with OTP.
+4. Turned on JS debugging, and found it was checking if enteredOTP==OTP
+5. OTP checking is done on client side which can be totally bypassed by the attacker.
+
+```
