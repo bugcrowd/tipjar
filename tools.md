@@ -125,8 +125,39 @@ Here's an example .scope file:
 
 read more https://github.com/tomnomnom/hacks/tree/master/inscope
  
- 
- ```
+
+Using Ctrl keys
+
+(source:random reddit guy)
+
+Ctrl + n : same as Down arrow.
+Ctrl + p : same as Up arrow.
+Ctrl + r : begins a backward search through command history.(keep pressing Ctrl + r to move backward)
+Ctrl + s : to stop output to terminal.
+Ctrl + q : to resume output to terminal after Ctrl + s.
+Ctrl + a : move to the beginning of line.
+Ctrl + e : move to the end of line.
+Ctrl + d : if you've type something, Ctrl + d deletes the character under the cursor, else, it escapes the current shell.
+Ctrl + k : delete all text from the cursor to the end of line.
+Ctrl + x + backspace : delete all text from the beginning of line to the cursor.
+Ctrl + t : transpose the character before the cursor with the one under the cursor, press Esc + t to transposes the two words before the cursor.
+Ctrl + w : cut the word before the cursor; then Ctrl + y paste it
+Ctrl + u : cut the line before the cursor; then Ctrl + y paste it
+Ctrl + _ : undo typing.
+Ctrl + l : equivalent to clear.
+Ctrl + x + Ctrl + e : launch editor defined by $EDITOR to input your command. Useful for multi-line commands.
+
+
+Run last command 
+!!
+eg: if you forgot to add sudo with a command you can do sudo !! to execute last command with sudo,
+  of course you can use this with any command
+
+The tree command is very cool
+you can use it to list the contents of a directory in a tree-like format
+
+
+```
 
 
 
