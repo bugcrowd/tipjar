@@ -152,3 +152,29 @@ you can use unfurl tool by @tomnomnom to do some cool stuff
 ```
 vim is very powerfull you can use `vimtutor` & go through it to learn vim.
 I also recommend reading [Mastering Vim Quickly: From WTF to OMG in no time. Book](https://jovicailic.org/mastering-vim-quickly/)
+
+
+## domain level
+This is a script that takes journals and extracts journals that contain high levels. You can select the level you want
+```bash
+#!/bin/bash
+lines=$1
+while read line
+do
+        count=`sed 's/\./\n/g' <<< $line | wc -l`
+        if [ $count -gt $lines ]
+        then
+                echo $line | rev  | cut -d '.' -f `seq  1 $lines | tr '\n' ',' | sed 's/,$//g'` | rev
+        fi
+done
+```
+example: 
+```bash
+echo 'admin.corp.google.com
+help.api.google.com' | domain_level.sh 3
+```
+output:
+```
+corp.google.com
+api.google.com
+```
