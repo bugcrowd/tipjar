@@ -32,6 +32,8 @@ A curated list of tools (and tips on how to use them) that will level up your bo
 | PwnFox | PwnFox is a Firefox/Burp extension that provide usefull tools for your security audit. (colorized output by the color of firefox container) | [https://github.com/B-i-t-K/PwnFox](https://github.com/B-i-t-K/PwnFox) | Free and Open Source|
 | LinkFinder             | Endpoint finder from JS Files                  | [https://github.com/GerbenJavado/LinkFinder](https://github.com/GerbenJavado/LinkFinder)                          | Free and Open Source |
 | Broken Link Checker             | Broken Link Finder                  | [https://github.com/stevenvachon/broken-link-checker/](https://github.com/stevenvachon/broken-link-checker/)                          | Free and Open Source|
+| QuickXSS             | XSS Finder                  | [https://github.com/theinfosecguy/QuickXSS](https://github.com/theinfosecguy/QuickXSS)                          | Free and Open Source|
+| gmapsapiscanner             | Google Maps API Key Validator                  | [https://github.com/ozguralp/gmapsapiscanner](https://github.com/ozguralp/gmapsapiscanner)                          | Free and Open Source|
 
 
 # Tool-Related Tips
