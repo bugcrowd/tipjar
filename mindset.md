@@ -77,3 +77,12 @@ When hunting for bugs, look for features that are complex. As a rule of thumb:
 
 More complex = less secure.
 ```
+
+## Patience is the Key.. 🗝
+
+
+```
+Never let burnouts or demovitation rule you over, Keep working & Wait for the right time because
+
+Patience is the 🗝 element of the success.
+```
