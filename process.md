@@ -265,3 +265,51 @@ Source: https://twitter.com/uraniumhacker/status/1066483686655221761
 ```
 If a website does not verify email, try signing up with @domain.com (the company email). Sometimes this gives you higher privilege like deleting/viewing any other user's profiles etc.
 ```
+
+## OTP/2FA Authentication bypasses
+
+Source: https://twitter.com/HackerHumble/status/1274259490322313219
+
+```
+1. Site requires Google Authenticator 2FA for performing a sensitive action.
+2. There is a 2FA setup endpoint which will give you the QR Code / auth code to add into your Google Authenticator app. Take note of this endpoint and request.
+3. When you want to perform a sensitive action that requires 2FA, try sending a request to the setup endpoint.
+4. In some cases, the application will just reset your 2FA to use the new code, which an attacker can utilise by setting it up in their own Google Authenticator app.
+```
+
+Source: https://twitter.com/HackerHumble/status/1250285312481189897
+
+```
+1. Web app is sending a verification code to email before changing some sensitive fields.
+2. Intercepted the request in burp and found the email parameter (eg: email: victim@gmail.com) in the POST request.
+3. Changed the email to another gmail (eg: attacker@gmail.com)
+4. Got the verification code at attacker@gmail.com.
+```
+
+Source: https://twitter.com/HackerHumble/status/1249171674773291013
+
+```
+1. Web app sending OTP before allowing sensitive action.
+2. Entered incorrect OTP 10 times - No rate limiting present.
+3. Send the request to a fuzzer to brute-force all codes from 0000 - 9999. 
+4. Monitor responses to determine the correct code.
+```
+
+Source: https://twitter.com/HackerHumble/status/1248457678826819585
+
+```
+1. An android application using OTP to secure a resource.
+2. Entered correct OTP. Intercepted the request in burp and observered that OTP is sent to server.
+3. Response is 200 OK and navigated to secured page.
+4. Tried again, by entering the incorrect OTP and intercepted the response.
+5. Response is 401 (Unauthorised), changed it to 200 OK and the response as like in the success request.
+6. Navigated to the secured page
+```
+
+Source: https://twitter.com/HackerHumble/status/1248084337506967552
+
+```
+1. Webapp is taking the user to /homepage after checking credentials and 2FA
+2. After entering the username and password, attempt to access /homepage directly (skip the 2FA step entirely)
+3. It's possible that cookies are set directly after the user/pass step, and the 2FA is only a client-side gate.
+```
