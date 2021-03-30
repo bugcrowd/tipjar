@@ -67,3 +67,8 @@ https://www.youtube.com/watch?v=jyjGneKJynk
 
 Damn Vulerable Graphql app for practice 
 https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application
+
+## Seclists : One place for all Wordlists
+
+Seclists by Daniel Miessler is amazing collection of Wordlists:
+https://github.com/danielmiessler/SecLists/
